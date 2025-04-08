@@ -5,8 +5,8 @@ const DashboardPage = () => {
         <div className='dashboardPage'>
             <div className="texts">
                 <div className="logo">
-                    <img src="logo.jpeg" alt="" />
-                    <h1>AskGem</h1>
+                    <img src="bot.png" alt="" />
+                    <h1>AskGem!</h1>
                 </div>
                 <div className="options">
                     <div className="option">

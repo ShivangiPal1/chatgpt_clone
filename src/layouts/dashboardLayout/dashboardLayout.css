@@ -1,16 +1,49 @@
 .dashboardLayout {
-    display: flex;
-    gap: 50px;
-    padding-top: 20px;
-    height: 100%;
-  
-    .menu {
-      flex: 1;
+  display: flex;
+  gap: 50px;
+  padding-top: 20px;
+  height: 100%;
+  background-color:black;
+  border-radius: 20px;
+  margin-top: 10px;
+}
 
-    }
+.menu {
+  flex: 1;
+}
+
+.content {
+  flex: 4;
+  position: relative;
+  background:#000000;
+  padding: 20px;
+  border-radius: 15px;
   
-    .content {
-      flex: 4;
-      background-color:#f7a0ae;
-    }
+  
+  /* Transparent border with gradient effect */
+  border: 5px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  
+  /* Gradient border animation */
+  &:before {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      background: linear-gradient(45deg, #3E3E3E, #460F9E, #FF00FF);
+      background-size: 300% 300%;
+      animation: gradientShift 6s infinite;
+      z-index: -1;
+      border-radius: 15px;
   }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+

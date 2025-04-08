@@ -1,6 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
 .signUpPage{
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
+}
+/* SignUp Container */
+.cl-rootBox {
+    /* width: 100%;
+    height: 100%; */
+    max-width: 700px;
+    max-height: 900px;
+    margin-top: 10px;
+    /* margin: 2rem auto; */
+    background:#180050;
+    border-radius: 1rem;
+    box-shadow: 0 22px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .cl-cardBox {
+    padding: 1rem;
+    width: 700px;
+    height: 900px;
+    
+  }
+  
+  .cl-card {
+    background: transparent;
+  }
+  
+  /* Header Styles */
+  .cl-header {
+    text-align: center;
+  }
+  
+  .cl-headerTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #d921fe;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+  }
+  
+  .cl-headerSubtitle {
+    color: #cbe555;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* Form Styles */
+  .cl-form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1.5rem; */
+    
+  }
+  
+  .cl-formField {
+    position: relative;
+  }
+  
+  /* email, phone number, address text */
+  .cl-formFieldLabel {   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    color: #000000;
+    font-size: .875rem;
+    font-weight: 500;
+  }
+  
+  .cl-formFieldInput {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(255, 251, 251, 0.8)
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .cl-formFieldInput:focus {
+    outline: none;
+    border-color: #d921fe;
+    box-shadow: 0 0 0 2px rgba(217, 33, 254, 0.2);
+  }
+  
+  .cl-formFieldInput::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Social Buttons */
+  .cl-socialButtonsRoot {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Divider */
+  .cl-dividerRow {
+    position: relative;
+    text-align: center;
+    /* margin: 1.5rem 0; */
+  }
+  
+  .cl-dividerRow::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Error States */
+  .cl-formFieldInput[aria-invalid="true"] {
+    border-color: #000000;
+  }
+  
+  /* Submit Button (if needed) */
+  .cl-button {
+    width: 100%;
+    padding: 0.875rem;
+    background: #8800ff;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .cl-button:hover {
+    background: #ffffff;
+    transform: translateY(-1px);
+  }
+  
+  .cl-button:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 640px) {
+    .cl-rootBox {
+      margin: 1rem;
+      width: auto;
+    }
+    
+    .cl-cardBox {
+      padding: 1.5rem;
+    }
+    
+    .cl-headerTitle {
+      font-size: 1.75rem;
+    }
+  }
+  .button, label {
+    border-radius: 20%;
+    background-color: #8800ff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.cl-formFieldInputShowPasswordButton{
+  height: 20px;
+  width: 30px;
+}
+.cl-selectButton{
+  height: 20px;
+  width:80px;
+}
+.cl-internal-167tq3k{
+  background-color: aliceblue;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.cl-formFieldInput__password{
+  color: #000000;
+}
+
+.cl-formFieldInput__emailAddress{
+  color:#000000;
+}
+.cl-footerAction{
+  color: #180050;
 }

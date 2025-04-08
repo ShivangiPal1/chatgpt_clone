@@ -11,8 +11,10 @@ const Homepage = () => {
                 <img src="/orbital.png" alt="" className='orbital'/>
                 <h1>AskGem</h1>
                 <h2>Supercharge your creativity and productivity</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloremque asperiores sequi amet, aut consectetur iure blanditiis libero? Vitae minus dolore
-                     necessitatibus expedita nulla officiis nesciunt fugit aliquid et assumenda.</h3>
+                <h3>A sharp AI with a knack for coding, AI, and problem-solving. 
+                    Your go-to for brainstorming ideas, debugging, and tech insights.
+                    Always up for a challenge, whether it’s DSA, web dev, or AI.
+                    Let’s turn your projects into something amazing!</h3>
                 <Link to='/sign-up'>Get Started</Link>
             </div>
             <div className="right">
@@ -25,7 +27,7 @@ const Homepage = () => {
                     <div className="chat">
                     <img src={
                         typingStatus === "human1"
-                        ? "/human1.jpeg"
+                        ? "/human2.jpeg"
                         : typingStatus === "human2"
                         ? "/human2.jpeg"
                         : "bot.png"
@@ -64,7 +66,7 @@ const Homepage = () => {
                 </div>
             </div>
             <div className="terms">
-                <img src="/logo.jpeg" alt="" />
+                <img src="/attachment.png" alt="" />
                 <div className="links">
                     <Link to="/">Terms of Service</Link>
                     <span>|</span>
